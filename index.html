@@ -486,49 +486,52 @@
     </section>
 
     <!-- Resume Section -->
-    <section id="resume" class="py-10 bg-gray-100">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">My Resume</h2>
+ <section id="resume" class="py-12 md:py-20 bg-gray-100">
+    <div class="container mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl md:text-4xl font-bold text-center mb-8 md:mb-12" data-aos="fade-up">My Resume</h2>
 
-        <!-- Large Screen View -->
-        <div class="hidden md:block bg-white rounded-lg shadow-xl overflow-hidden" data-aos="fade-up">
-        <div class="overflow-auto border shadow-xl bg-white p-4 rounded-md mx-auto max-w-[794px]">
-            <embed
-            src="Subramanyam_Data Analyst.pdf?v=1"
-            type="application/pdf"
-            width="100%" 
-            height="1000px"
-            class="w-full rounded-md"
-            />  
+        <!-- PDF Viewer Container -->
+        <div class="bg-white rounded-lg shadow-xl overflow-hidden" data-aos="fade-up">
+            <!-- Mobile Fallback (Google Docs Viewer) -->
+            <div class="md:hidden">
+                <div class="aspect-w-3 aspect-h-4 w-full min-h-[60vh]">
+                    <iframe 
+                        src="https://docs.google.com/gview?url=https://yourdomain.com/Subramanyam_Data%20Analyst.pdf&embedded=true"
+                        class="w-full h-full border-0"
+                        frameborder="0"
+                    ></iframe>
+                </div>
+                <p class="text-center text-sm text-gray-500 p-4">
+                    Having trouble viewing? <a href="Subramanyam_Data%20Analyst.pdf" class="text-blue-500 hover:underline">Download instead</a>
+                </p>
+            </div>
+
+            <!-- Desktop PDF Viewer -->
+            <div class="hidden md:block">
+                <div class="overflow-auto border shadow-xl bg-white p-4 rounded-md mx-auto max-w-[794px]">
+                    <embed
+                        src="Subramanyam_Data%20Analyst.pdf?v=1"
+                        type="application/pdf"
+                        width="100%" 
+                        height="1000px"
+                        class="w-full rounded-md"
+                    />  
+                </div>
+            </div>
         </div>
+
+        <!-- Download Button -->
+        <div class="flex justify-center mt-8 md:mt-12" data-aos="fade-up">
+            <a 
+                href="Subramanyam_Data%20Analyst.pdf" 
+                download="Subramanyam_Data_Analyst.pdf"
+                class="bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center"
+            >
+                <i class="fas fa-download mr-2"></i> Download Resume
+            </a>
         </div>
-        
-
-   
-<!-- Mobile PDF Viewer -->
-<div class="block md:hidden bg-white rounded-lg shadow-xl overflow-hidden mt-5 " data-aos="fade-up">
-  <div class="w-full h-[50vh] overflow-hidden ">
-    <embed 
-      src="Subramanyam_Data Analyst.pdf?v=2"
-      type="application/pdf"
-      class="w-full h-full rounded-md"
-    />
-  </div>
-</div>
-
-
-        <!-- resume download  -->
-        <div class="flex justify-center mt-12 space-x-4" data-aos="fade-up">
-        <a 
-            href="Subramanyam_Data Analyst.pdf" 
-            download="subramanyam_Data Analyst.pdf"
-            class="bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
-        >
-            <i class="fas fa-download mr-2"></i> Download Resume
-        </a>
-        </div> 
-    </section>
-
+    </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-white">
