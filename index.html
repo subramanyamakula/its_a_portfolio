@@ -10,53 +10,75 @@
     
 </head>
 <body class="bg-gray-50 font-sans smooth-scroll">
-    <!-- Navigation -->
-    <nav class="fixed w-full bg-white shadow-md z-50">
-        <div class="container mx-auto px-6 py-3">
-            <div class="flex items-center justify-between">
-                <a href="#home" class="text-2xl font-bold text-gray-800 hover:text-blue-500 transition-colors">MyPortfolio</a>
-                
-                <!-- Mobile menu button -->
-                <div class="md:hidden">
-                    <button id="menu-toggle" class="text-gray-800 focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
-                
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-8 px-3">
-                    <a href="#home" class="nav-link text-gray-800 hover:text-blue-500 transition-colors">Home</a>
-                    <a href="#about" class="nav-link text-gray-800 hover:text-blue-500 transition-colors">About</a>
-                    <a href="#projects" class="nav-link text-gray-800 hover:text-blue-500 transition-colors">Projects</a>
-                    <a href="#skills" class="nav-link text-gray-800 hover:text-blue-500 transition-colors">Skills</a>
-                    <a href="#resume" class="nav-link text-gray-800 hover:text-blue-500 transition-colors">Resume</a>
-                    <a href="#contact" class="nav-link text-gray-800 hover:text-blue-500 transition-colors">Contact</a>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="mobile-menu fixed inset-y-0 right-0 w-64 bg-white shadow-lg p-6 md:hidden">
-            <div class="flex justify-end">
-                <button id="menu-close" class="text-gray-800 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+ <!-- Navigation -->
+<nav class="fixed w-full bg-white shadow-md z-50">
+    <div class="container mx-auto px-4 sm:px-6 py-3">
+        <div class="flex items-center justify-between">
+            <a href="#home" class="text-xl sm:text-2xl font-bold text-gray-800 hover:text-blue-500 transition-colors">MyPortfolio</a>
+            
+            <!-- Mobile menu button -->
+            <div class="md:hidden ">
+                <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
             </div>
             
-            <nav class="mt-10">
-                <a href="#home" class="block py-2 px-4 text-gray-800 hover:bg-gray-100 rounded nav-link">Home</a>
-                <a href="#about" class="block py-2 px-4 text-gray-800 hover:bg-gray-100 rounded nav-link">About</a>
-                <a href="#projects" class="block py-2 px-4 text-gray-800 hover:bg-gray-100 rounded nav-link">Projects</a>
-                <a href="#skills" class="block py-2 px-4 text-gray-800 hover:bg-gray-100 rounded nav-link">Skills</a>
-                <a href="#resume" class="block py-2 px-4 text-gray-800 hover:bg-gray-100 rounded nav-link">Resume</a>
-                <a href="#contact" class="block py-2 px-4 text-gray-800 hover:bg-gray-100 rounded nav-link">Contact</a>
-            </nav>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-4 lg:space-x-6 xl:space-x-8">
+                <a href="#home" class="nav-link text-sm lg:text-base text-gray-800 hover:text-blue-500 transition-colors">Home</a>
+                <a href="#about" class="nav-link text-sm lg:text-base text-gray-800 hover:text-blue-500 transition-colors">About</a>
+                <a href="#projects" class="nav-link text-sm lg:text-base text-gray-800 hover:text-blue-500 transition-colors">Projects</a>
+                <a href="#skills" class="nav-link text-sm lg:text-base text-gray-800 hover:text-blue-500 transition-colors">Skills</a>
+                <a href="#resume" class="nav-link text-sm lg:text-base text-gray-800 hover:text-blue-500 transition-colors">Resume</a>
+                <a href="#contact" class="nav-link text-sm lg:text-base text-gray-800 hover:text-blue-500 transition-colors">Contact</a>
+            </div>
         </div>
-    </nav>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu hidden fixed inset-y-0 right-0 w-64 bg-white shadow-lg p-6 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+        <div class="flex justify-end">
+            <button id="menu-close" class="text-gray-800 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <nav class="mt-10 space-y-4">
+            <a href="#home" class="block py-2 px-4 text-gray-800 hover:bg-gray-100 rounded nav-link">Home</a>
+            <a href="#about" class="block py-2 px-4 text-gray-800 hover:bg-gray-100 rounded nav-link">About</a>
+            <a href="#projects" class="block py-2 px-4 text-gray-800 hover:bg-gray-100 rounded nav-link">Projects</a>
+            <a href="#skills" class="block py-2 px-4 text-gray-800 hover:bg-gray-100 rounded nav-link">Skills</a>
+            <a href="#resume" class="block py-2 px-4 text-gray-800 hover:bg-gray-100 rounded nav-link">Resume</a>
+            <a href="#contact" class="block py-2 px-4 text-gray-800 hover:bg-gray-100 rounded nav-link">Contact</a>
+        </nav>
+    </div>
+</nav>
+
+<script>
+    // Mobile menu toggle functionality
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuClose = document.getElementById('menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.remove('translate-x-full');
+        mobileMenu.classList.add('translate-x-0');
+    });
+    
+    menuClose.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-0');
+        mobileMenu.classList.add('translate-x-full');
+        setTimeout(() => {
+            mobileMenu.classList.add('hidden');
+        }, 300);
+    });
+</script>
+
 
     <!-- Home Section -->
     <section id="home" class="relative bg-gradient-to-r from-blue-500 to-blue-700 text-white">
@@ -106,25 +128,28 @@
                          improving customer experiences, or uncovering growth opportunities. I believe in the power of storytelling with data, transforming complex 
                         information into compelling visuals and reports that stakeholders can easily understand
                     </p>
-                    
-                    <div class="grid grid-cols-2 gap-4 mb-8">
-                        <div class="flex items-center">
-                            <span class="font-semibold mr-2">Name:</span>
-                            <span>A V Subramanyam</span>
-                        </div>
-                        <div class="flex items-center">
-                            <span class="font-semibold mr-2">Email:</span>
-                            <span>subramanyam0203@gmail.com</span>
-                        </div>
-                        <div class="flex items-center">
-                            <span class="font-semibold mr-2">Location:</span>
-                            <span>Bangalore, KA</span>
-                        </div>
-                        <div class="flex items-center">
-                            <span class="font-semibold mr-2">Experience:</span>
-                            <span>1.5+ years</span>
-                        </div>
-                    </div>
+                   <div class="flex flex-col space-y-4 mb-8">
+    <div class="flex flex-wrap gap-x-4">
+        <div class="flex items-center min-w-[50%]">
+            <span class="font-semibold mr-2 w-24">Name:</span>
+            <span>A V Subramanyam</span>
+        </div>
+        <div class="flex items-center min-w-[50%]">
+            <span class="font-semibold mr-2 w-24">Email:</span>
+            <span>subramanyam0203@gmail.com</span>
+        </div>
+    </div>
+    <div class="flex flex-wrap gap-x-4">
+        <div class="flex items-center min-w-[50%]">
+            <span class="font-semibold mr-2 w-24">Location:</span>
+            <span>Bangalore, KA</span>
+        </div>
+        <div class="flex items-center min-w-[50%]">
+            <span class="font-semibold mr-2 w-24">Experience:</span>
+            <span>1.5+ years</span>
+        </div>
+    </div>
+</div>
                     
                     <div class="flex space-x-4">
                         <a href="#resume" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors">View Resume</a>
@@ -461,7 +486,7 @@
     </section>
 
     <!-- Resume Section -->
-    <section id="resume" class="py-20 bg-gray-100">
+    <section id="resume" class="py-10 bg-gray-100">
     <div class="container mx-auto px-6">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">My Resume</h2>
 
@@ -479,123 +504,7 @@
         </div>
         
 
-              <!-- <div class="md:flex">
-                    
-                    <div class="md:w-1/3 bg-blue-700 text-white p-8">
-                        <div class="text-center mb-10">
-                            <div class="w-32 h-32 rounded-full overflow-hidden mx-auto border-4 border-white mb-4 bg-white">
-                                <img src="picture.png" alt="Profile" class="w-full h-full object-cover">
-                            </div>
-                            <h3 class="text-xl font-bold">A V Subramanyam</h3>
-                            <p class="text-blue-200">Data Analyst</p>
-                        </div>
-                        
-                        <div class="mb-8">
-                            <h4 class="text-lg font-semibold mb-4">Contact</h4>
-                            <ul class="space-y-3">
-                                <li class="flex items-center">
-                                    <i class="fas fa-envelope mr-3 text-blue-300"></i>
-                                    <span>subramanyam0203@gmail.com</span>
-                                </li>
-                               
-                                <li class="flex items-center">
-                                    <i class="fas fa-map-marker-alt mr-3 text-blue-300"></i>
-                                    <span>Bangalore, KA</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i class="fab fa-github mr-3 text-blue-300"></i>
-                                    <span>github.com/subramanyamakula</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i class="fab fa-linkedin mr-3 text-blue-300"></i>
-                                    <span>linkedin.com/in/venkata-subramanyam-akula/</span>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <div>
-                            <h4 class="text-lg font-semibold mb-4">Skills</h4>
-            <ul class="space-y-2">
-                <li><strong>Data Analysis:</strong> Python (Pandas, NumPy)</li>
-                <li><strong>Data Visualization:</strong> Power BI, Matplotlib, Seaborn</li>
-                <li><strong>Databases:</strong> SQL (Transact-SQL, MySQL), MongoDB (NoSQL)</li>
-                <li><strong>Big Data:</strong> Spark, Hadoop (Basics)</li>
-                <li><strong>Statistical Analysis:</strong> Hypothesis Testing, Regression, A/B Testing</li>
-                <li><strong>Version Control:</strong> Git & GitHub</li>
-                <li><strong>Web Skills (Bonus):</strong> JavaScript (ES6+), HTML/CSS (for dashboards)</li>
-                <li><strong>Tools:</strong> Excel/Google Sheets (Advanced), Jupyter Notebooks</li>
-                <li><strong>Methodologies:</strong> Agile, Data Cleaning, ETL Processes</li>
-            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="md:w-2/3 p-8">
-                        <div class="mb-10">
-                            <div class="flex items-center mb-6">
-                                <i class="fas fa-user text-blue-600 mr-3 text-xl"></i>
-                                <h3 class="text-2xl font-bold">About Me</h3>
-                            </div>
-                            <p class="text-gray-700 leading-relaxed">
-                                As a passionate Data Analyst with 1.5+ years of experience, I thrive on turning raw data into meaningful insights that drive business decisions. My expertise lies in SQL, Python, and data visualization tools like Power BI and Tableau, which I use to analyze trends, identify patterns, and present findings in a clear, actionable manner. I have a strong foundation in statistical analysis, data cleaning, and dashboard development, ensuring accuracy and usability at every stage.
-                            </p>
-                        </div>
-                        
-                        <div class="mb-10">
-                            <div class="flex items-center mb-6">
-                                <i class="fas fa-briefcase text-blue-600 mr-3 text-xl"></i>
-                                <h3 class="text-2xl font-bold">Experience</h3>
-                            </div>
-                            
-                            <div class="space-y-8">
-                                <div>
-                                    <h4 class="text-lg font-bold mb-1">Associate Data Analyst</h4>
-                                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                                        <span class="text-blue-600 font-medium">Teleperformance</span>
-                                        <span class="text-gray-500 text-sm">Oct 2023 - Feb 2025</span>
-                                    </div>
-                                    <ul class="list-disc pl-5 text-gray-700 space-y-1">
-                                        <li>Led development of enterprise-level web applications using React and Node.js</li>
-                                        <li>Improved application performance by 40% through optimization techniques</li>
-                                        <li>Mentored junior developers and conducted code reviews</li>
-                                        <li>Implemented CI/CD pipelines reducing deployment time by 60%</li>
-                                    </ul>
-                                </div>
-                                
-                                <div>
-                                    <h4 class="text-lg font-bold mb-1">Web Developer</h4>
-                                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                                        <span class="text-blue-600 font-medium">Digital Creative Agency</span>
-                                        <span class="text-gray-500 text-sm">May 2017 - Dec 2019</span>
-                                    </div>
-                                    <ul class="list-disc pl-5 text-gray-700 space-y-1">
-                                        <li>Developed and maintained client websites and web applications</li>
-                                        <li>Collaborated with designers to implement responsive UI designs</li>
-                                        <li>Integrated third-party APIs and payment gateways</li>
-                                        <li>Reduced page load times by 30% through performance optimization</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="mb-10">
-                            <div class="flex items-center mb-6">
-                                <i class="fas fa-graduation-cap text-blue-600 mr-3 text-xl"></i>
-                                <h3 class="text-2xl font-bold">Education</h3>
-                            </div>
-                            
-                            <div>
-                                <h4 class="text-lg font-bold mb-1">Master's in Computer Science</h4>
-                                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                                    <span class="text-blue-600 font-medium">Stanford University</span>
-                                    <span class="text-gray-500 text-sm">2015 - 2017</span>
-                                </div>
-                                <p class="text-gray-700">Specialized in Web Technologies and Human-Computer Interaction</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-    <!-- Small Screen View -->
+   
 <!-- Mobile PDF Viewer -->
 <div class="block md:hidden bg-white rounded-lg shadow-xl overflow-hidden mt-5 " data-aos="fade-up">
   <div class="w-full h-[50vh] overflow-hidden ">
@@ -743,47 +652,52 @@
                         </section>
 
                         <!-- Footer -->
-                        <footer class="bg-gray-900 text-white py-12">
-                            <div class="container mx-auto px-6">
-                                <div class="flex flex-col md:flex-row justify-between items-center">
-                                    <div class="mb-6 md:mb-0 ">
-                                        <a href="#home" class="text-2xl font-bold hover:text-blue-400 transition-colors">MyPortfolio</a>
-                                        <p class="mt-2 text-gray-400">Building digital experiences that matter.</p>
-                            </div>
-                                    
-                
-                <div>
-                    <ul class="flex space-x-6">
-                        <li><a href="#home" class="hover:text-blue-400 transition-colors">Home</a></li>
-                        <li><a href="#about" class="hover:text-blue-400 transition-colors">About</a></li>
-                        <li><a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a></li>
-                        <li><a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a></li>
-                        <li><a href="#resume" class="hover:text-blue-400 transition-colors">Resume</a></li>
-                        <li><a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a></li>
-                    </ul>
-                    
-                    <div class="mt-6 flex justify-center space-x-4">
-                        <a href="https://github.com/subramanyamakula" class="bg-gray-800 hover:bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center transition-colors">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/venkata-subramanyam-akula" class="bg-gray-800 hover:bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center transition-colors">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@akulavenkatasubramanyam315" class="bg-gray-800 hover:bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center transition-colors">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="#" class="bg-gray-800 hover:bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center transition-colors">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
+<footer class="bg-gray-900 text-white py-8 sm:py-12">
+    <div class="container mx-auto px-4 sm:px-6">
+        <!-- Main Footer Content -->
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <!-- Brand Section -->
+            <div class="mb-6 md:mb-0 text-center md:text-left">
+                <a href="#home" class="text-xl sm:text-2xl font-bold hover:text-blue-400 transition-colors block">MyPortfolio</a>
+                <p class="mt-2 text-gray-400 text-sm sm:text-base">Building digital experiences that matter.</p>
             </div>
             
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 A V Subramanyam. All rights reserved.</p>
+            <!-- Navigation and Social Links -->
+            <div class="w-full md:w-auto">
+                <!-- Navigation Links - Stacked on mobile -->
+                <ul class="flex flex-wrap justify-center gap-3 sm:gap-6 mb-6">
+                    <li><a href="#home" class="hover:text-blue-400 transition-colors text-sm sm:text-base">Home</a></li>
+                    <li><a href="#about" class="hover:text-blue-400 transition-colors text-sm sm:text-base">About</a></li>
+                    <li><a href="#projects" class="hover:text-blue-400 transition-colors text-sm sm:text-base">Projects</a></li>
+                    <li><a href="#skills" class="hover:text-blue-400 transition-colors text-sm sm:text-base">Skills</a></li>
+                    <li><a href="#resume" class="hover:text-blue-400 transition-colors text-sm sm:text-base">Resume</a></li>
+                    <li><a href="#contact" class="hover:text-blue-400 transition-colors text-sm sm:text-base">Contact</a></li>
+                </ul>
+                
+                <!-- Social Icons -->
+                <div class="flex justify-center space-x-3 sm:space-x-4">
+                    <a href="https://github.com/subramanyamakula" class="bg-gray-800 hover:bg-gray-700 w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-colors" aria-label="GitHub">
+                        <i class="fab fa-github text-sm sm:text-base"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/venkata-subramanyam-akula" class="bg-gray-800 hover:bg-gray-700 w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-colors" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in text-sm sm:text-base"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@akulavenkatasubramanyam315" class="bg-gray-800 hover:bg-gray-700 w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-colors" aria-label="YouTube">
+                        <i class="fab fa-youtube text-sm sm:text-base"></i>
+                    </a>
+                    <a href="#" class="bg-gray-800 hover:bg-gray-700 w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-colors" aria-label="Instagram">
+                        <i class="fab fa-instagram text-sm sm:text-base"></i>
+                    </a>
+                </div>
             </div>
         </div>
-    </footer>
+        
+        <!-- Copyright Section -->
+        <div class="border-t border-gray-800 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-gray-400 text-xs sm:text-sm">
+            <p>&copy; 2025 A V Subramanyam. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
 
     <!-- Project Data -->
     <script>
