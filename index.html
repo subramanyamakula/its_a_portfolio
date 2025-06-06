@@ -489,23 +489,21 @@
  <section id="resume" class="py-12 md:py-20 bg-gray-100">
     <div class="container mx-auto px-4 sm:px-6">
         <h2 class="text-2xl md:text-4xl font-bold text-center mb-8 md:mb-12" data-aos="fade-up">My Resume</h2>
+            <section id="resume" class="py-12 md:py-20 bg-gray-100">
+   
 
         <!-- PDF Viewer Container -->
         <div class="bg-white rounded-lg shadow-xl overflow-hidden" data-aos="fade-up">
-            <!-- Mobile Fallback (Google Docs Viewer) -->
-            <div class="md:hidden">
-                <div class="aspect-w-3 aspect-h-4 w-full min-h-[60vh]">
-                    <iframe 
-                        src="https://drive.google.com/file/d/11u2_e0jBeqZvqbW2jdYvDCUKQYVXyIWf/view?usp=sharing"
-                        class="w-full h-full border-0"
-                        frameborder="0"
-                    ></iframe>
-                </div>
-                <p class="text-center text-sm text-gray-500 p-4">
-                    Having trouble viewing? <a href="Subramanyam_Data%20Analyst.pdf" class="text-blue-500 hover:underline">Download instead</a>
-                </p>
-            </div>
-
+            <!-- Mobile PDF Viewer (Updated Solution) -->
+           <div class="md:hidden">
+    <embed
+        src="Subramanyam_Data Analyst.pdf"
+        class="w-full h-full border-0"
+        style="height: 600px;"
+        frameborder="50"
+    >
+</div>
+`
             <!-- Desktop PDF Viewer -->
             <div class="hidden md:block">
                 <div class="overflow-auto border shadow-xl bg-white p-4 rounded-md mx-auto max-w-[794px]">
@@ -519,7 +517,8 @@
                 </div>
             </div>
         </div>
-
+        <!-- PDF Viewer Container -->
+       
         <!-- Download Button -->
         <div class="flex justify-center mt-8 md:mt-12" data-aos="fade-up">
             <a 
